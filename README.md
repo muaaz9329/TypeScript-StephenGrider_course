@@ -1,4 +1,4 @@
-##Basic Info of Course
+## Basic Info of Course
 Course Name : Typescript: The Complete Developer's Guide
 Started at : 27 april , 2023
 teached by : Stephen Grider
@@ -10,7 +10,7 @@ Learning Goal :
    4. Write reusable code powered by classes and interfaces
    5. Assemble reusable boilerplates for your own Typescript projects
 
-##Desciption of course 
+## Desciption of course 
 Composition vs Inheritance? You'll understand it.  Build your own web framework? You'll do it.  Typescript with React/Redux?  It's here!
 
 --------------------

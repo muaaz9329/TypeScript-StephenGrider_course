@@ -1,14 +1,24 @@
 ## Basic Info of Course
 Course Name : Typescript: The Complete Developer's Guide
+
+
 Started at : 27 april , 2023
+
+
 teached by : Stephen Grider
-Link of course: https://www.udemy.com/course/typescript-the-complete-developers-guide/
+
+
+Link of course: https://www.udemy.com/course/typescript-the-complete-developers-guide
+
+
 Learning Goal :
    1. Master design patterns for building large applications
    2. Integrate Typescript into React/Redux or Express projects
    3. Understand Composition vs Inheritance, and when to use each
    4. Write reusable code powered by classes and interfaces
    5. Assemble reusable boilerplates for your own Typescript projects
+
+
 
 ## Desciption of course 
 Composition vs Inheritance? You'll understand it.  Build your own web framework? You'll do it.  Typescript with React/Redux?  It's here!

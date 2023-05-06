@@ -58,11 +58,10 @@ IsVehicalBroken(newOldCar_obj);
 
 
 // typescript under the hood only cheack weather the item given the interface object 
-//type have the properties described in the interface so lets say if a function 
+// type have the properties described in the interface so lets say if a function 
 // have interface property of broken and chechBroken which is function
 
 interface Reportable {
-    broken:boolean;
     checkBroken():string
 }
 
@@ -83,3 +82,16 @@ isCarBroken(newObj) // as you can see newObj have 4 property and the interface R
 // in function isCarBroken the item is given Reportable type , and when isCarBroken() finction is called 
 //with newObj as param then typescript under the hood only cares to check weather newObj object have 
 //the Decribed properties of Reportable interface 
+
+
+// Here is an example of code Reuseablity in typeScript using interfaces
+
+const Drink ={
+    name : 'coke',
+    carbonated :true,
+    sugar : 40,
+    checkBroken() :string {
+        return this.sugar >30 ? `Dawwggg sugar is High as fuck man`:`this shit is fine as fuck`
+    }
+}
+isCarBroken(Drink)

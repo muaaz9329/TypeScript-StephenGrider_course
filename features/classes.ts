@@ -73,3 +73,23 @@ class Class{
 }
 const Cosc3A = new Class(48);
 console.log(Cosc3A.noOfKids);
+
+
+// The use of super in Javascript
+
+class Parent{
+    constructor(public name:string){}
+    NewMeth(){
+        console.log('hi I am new Method');
+    }
+}
+
+class Child extends Parent{
+    constructor(public FatherName:string , name:string){
+        super(name) // this is the parent constructor that must be called
+                    // When Working with the child Class constructor and its arguments must be fullfilles
+    }
+}
+
+const NewObj = new Child('Sarfraz','Muaaz');
+console.log(NewObj.name);

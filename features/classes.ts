@@ -93,3 +93,5 @@ class Child extends Parent{
 
 const NewObj = new Child('Sarfraz','Muaaz');
 console.log(NewObj.name);
+
+/// 9th may offf

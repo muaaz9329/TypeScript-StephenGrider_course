@@ -1,7 +1,6 @@
 /// <reference types="@types/google.maps" />
-import { User } from "./User";
-import { Company } from "./Company";
+// import { User } from './User';
+// import { Company } from './Company';
+import { CustomMap } from "./CustomMap";
 
-const newUser = new User();
-const newCompany = new Company();
-console.log(newCompany)
+new CustomMap(document.getElementById('map') as HTMLElement);

@@ -1,5 +1,6 @@
 /// <reference types="@types/google.maps" />
-
+import { User } from './User';
+import { Company } from './Company';
 export class CustomMap {
  private googleMap: google.maps.Map;
   constructor(element : HTMLElement) {
@@ -13,5 +14,13 @@ export class CustomMap {
         },
       }
     );
+  }
+
+  addMarker(mappable : Company | User){
+    new google.maps.Marker({
+      map:this.googleMap,
+      position:mappable.location
+    }
+    )
   }
 }

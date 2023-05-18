@@ -1,6 +1,7 @@
 import {faker} from '@faker-js/faker'
+import { canBeMapped } from './types';
 
-export class Company{
+export class Company implements canBeMapped{
     name_of_company:string;
     short_name:string;
     location:{

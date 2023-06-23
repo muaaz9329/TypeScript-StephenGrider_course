@@ -1,7 +1,10 @@
+import Sorter from "../Sorter";
 import { Collection } from "../types/types";
 
-class NumberCollection implements Collection{
-    constructor(public Data : number[]){}
+class NumberCollection extends Sorter implements Collection{
+    constructor(public Data : number[]){
+        super()
+    }
     swap(LeftNumber:number , RightNumber:number): void {
         const Temp = this.Data[LeftNumber];
         this.Data[LeftNumber]=this.Data[RightNumber]

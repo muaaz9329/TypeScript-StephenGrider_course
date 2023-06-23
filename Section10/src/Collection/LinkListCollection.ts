@@ -1,11 +1,12 @@
+import Sorter from "../Sorter";
 import { LinkList, LinkNodeType } from "../Structure/LinkList";
 import { Collection } from "../types/types";
 
-class LinkListCollection implements Collection {
+class LinkListCollection extends Sorter implements Collection {
 
-  temp: LinkNodeType;
-  temp2: LinkNodeType;
-  constructor(public data: LinkList) {}
+  constructor(public data: LinkList) {
+    super();
+  }
   get length() {
     return this.data.size;
   }
@@ -25,33 +26,28 @@ class LinkListCollection implements Collection {
       rightNode = rightNode?.NextNode;
     }
   
-    // Check if nodes exist at the specified indices
-    if (!leftNode || !rightNode) {
-      return;
-    }
   
     // Swap the nodes by updating the next pointers
-    let tempNext = leftNode.NextNode;
-    leftNode.NextNode = rightNode.NextNode;
-    rightNode.NextNode = tempNext;
+    let leftHand = leftNode?.Data;
+    leftNode!.Data = rightNode?.Data;
+    rightNode!.Data = leftHand;
+
   
-    // Update the Start pointer if needed
-    if (this.data.Start === leftNode) {
-      this.data.Start = rightNode;
-    } else if (this.data.Start === rightNode) {
-      this.data.Start = leftNode;
-    }
+   
   }
   
   compare(LeftIndex: number, RightIndex: number): boolean {
+
+  let temp: LinkNodeType;
+  let temp2: LinkNodeType;
     
-    this.temp = this.data.Start;
+    temp = this.data.Start;
     for (let i = 0; i < LeftIndex; i++) {
-      this.temp = this.temp?.NextNode;
+      temp = temp?.NextNode;
     }
-    this.temp2 = this.temp?.NextNode;
-    console.log(this.temp?.Data > this.temp2?.Data)
-    return this.temp?.Data > this.temp2?.Data;
+    temp2 = temp?.NextNode;
+   
+    return temp?.Data > temp2?.Data;
     
   }
   display() {

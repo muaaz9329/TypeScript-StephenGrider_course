@@ -1,16 +1,21 @@
+import { CharacterCollection } from './Collection/CharacterCollection';
 import LinkListCollection from './Collection/LinkListCollection';
 import NumberCollection from './Collection/NumberCollection';
 import Sorter from './Sorter';
 import { LinkList } from './Structure/LinkList';
 
-let NewLinkList = new LinkList();
-NewLinkList.insertAtEnd(12)
-NewLinkList.insertAtEnd(11)
-NewLinkList.insertAtEnd(10)
-NewLinkList.insertAtStart(13)
-NewLinkList.insertAtStart(14)
-NewLinkList.insertAtStart(-1)
-let newCollection = new LinkListCollection(NewLinkList)
-let sorterClass = new Sorter(newCollection);
-sorterClass.sort();
-newCollection.display();
+// let NewLinkList = new LinkList();
+// NewLinkList.insertAtEnd(12)
+// NewLinkList.insertAtEnd(11)
+// NewLinkList.insertAtEnd(10)
+// NewLinkList.insertAtStart(13)
+// NewLinkList.insertAtStart(14)
+// NewLinkList.insertAtStart(-1)
+// let newCollection = new LinkListCollection(NewLinkList)
+// let sorterClass = new Sorter(newCollection);
+// sorterClass.sort();
+// newCollection.display();
+let newCollection = new CharacterCollection("dnfsjkdf");
+newCollection.sort()
+console.log(newCollection.data)
+

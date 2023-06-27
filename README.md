@@ -4,6 +4,8 @@ Course Name : Typescript: The Complete Developer's Guide
 
 Started at : 27 april , 2023
 
+Completed at : 27 June , 2023
+
 
 teached by : Stephen Grider
 

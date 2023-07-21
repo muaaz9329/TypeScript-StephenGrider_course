@@ -20,6 +20,7 @@ Learning Goal :
    4. Write reusable code powered by classes and interfaces
    5. Assemble reusable boilerplates for your own Typescript projects
 
+![Alt text](UC-47677734-b458-4332-9bfc-d05ce4ec025d.jpg)
 
 
 ## Desciption of course 
